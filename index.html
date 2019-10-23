@@ -8,6 +8,11 @@
     color: #f3f5f3;
   }
 
+  @font-face {
+    font-family: bggfont;
+    src: url(Apercu/Apercu_Regular.otf);
+  }
+
   .page {
     display: flex;
     align-items: center;
@@ -16,7 +21,7 @@
     height: 100%;
     background-color: #135450;
     flex-direction: column;
-
+    font-family: bggfont;
   }
 
   header {
@@ -26,6 +31,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
   }
 
   .menu {
@@ -98,7 +104,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+    <link rel="stylesheet" type="text/css" href="webfrontkit/style.css">
     <title> Home Page</title>
   </head>
     <div class="page">
@@ -123,7 +129,7 @@
         <div class="aboutme">
           <img id='headshot' src='pics/IMG_5181.jpg' alt= 'Head shot'>
           <h1 class="name">
-            Kristy Drutman
+            <b>Kristy Drutman</b>
           </h1>
           <p class="bio">
           Brown Girl Green is a podcast and media series created by Kristy Drutman. She interviews environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis. She is working to change the image of what it means to be an environmentalist in the 21st century. 
