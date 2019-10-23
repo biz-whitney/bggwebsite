@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<style type="text/css">
+  * {
+    box-sizing: border-box; 
+    margin: 0;
+    color: #f3f5f3;
+  }
+
+  .page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #135450;
+    flex-direction: column;
+
+  }
+
+  header {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-around;
+    color: red;
+    width: 100%;
+    font-size: 2em;
+  }
+
+  .bgg {
+    font-size: 5em;
+    padding: 2%;
+  }
+
+  .aboutme {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #headshot{
+    width: 40%;
+    height: 50%;
+    object-fit: cover;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin: 4%;
+  }
+
+  .bio {
+    width: 60%;
+    margin: 2%;
+    font-size: 3em;
+  }
+  .name {
+    font-size: 4em;
+  }
+
+
+
+  a:link,
+  a:visited {
+    color: none;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .button a:hover {
+    color: green;
+    text-decoration: none;
+  }
+  .button {
+    display: block;
+    background-color: black;
+    font-size: 3em;
+  }
+
+</style>
+
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+    <title> Home Page</title>
+  </head>
+    <div class="page">
+      
+        <header>
+          <h1 class="bgg">
+            <p> Brown Girl Green</p>
+          </h1>
+          <div class="menu">
+            
+             <a href='index.html'>Home</a> 
+             <a href='about.html'>About</a> 
+             <a href='podcast.html'>Podcast</a> 
+             <a href='youtube.html'>Youtube</a> 
+             <a href='bookme.html'>Speaking/Book Me</a> 
+             <a href='support.html'>Support/Contact</a> 
+
+            
+          </div>
+        </header>
+
+        <div class="aboutme">
+          <img id='headshot' src='pics/IMG_5181.jpg' alt= 'Head shot'>
+          <h1 class="name">
+            Kristy Drutman
+          </h1>
+          <p class="bio">
+          Brown Girl Green is a podcast and media series created by Kristy Drutman. She interviews environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis. She is working to change the image of what it means to be an environmentalist in the 21st century. 
+          </p>
+          <h1 class="button">
+            <a href='about.html'>More About Me</a>
+          </h1>
+        </div>
+
+
+        <div class="content-container">
+          <div class="content">
+            
+          </div>
+
+        </div>
+        
+      
+    </div>
+  </html>
