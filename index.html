@@ -58,8 +58,8 @@
   }
   
   #headshot{
-    width: 50%;
-    height: 60%;
+    width: 60%;
+    height: 70%;
     object-fit: cover;
     display: flex; 
     align-items: center;
@@ -114,10 +114,83 @@
     margin: 1%;
   }
 
+  .content a {
+    display: flex;
+    align-items: center;
+
+  }
+
   video {
     z-index: 1;
     opacity: 0.78;
     width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .content-button {
+    /*display: flex;
+    border: 1px solid #A1B09D;
+    display: block;
+    background-color: black;*/
+    width: 20%;
+  
+  }
+  .content-button a {
+    /*display: flex;
+    border: 1px solid #A1B09D;*/
+    color: red;
+    border: 1px solid #A1B09D;
+  }
+
+
+
+  /*For smaller screens*/
+  @media(max-width: 700px) {
+    .aboutme {
+      display: flex;
+      width: 95%;
+    }
+    .bio {
+      width: 100%;
+      margin: 1%;
+      font-size: 1.5em;
+    }
+    .name {
+      font-size: 2em;
+    }
+    .button {
+      display: block;
+      background-color: black;
+      font-size: 1em;
+    }
+
+    #headshot{
+      width: 100%;
+      height: 70%;
+    }
+
+    .content-container {
+      display: flex;
+      font-family: bggfont;
+      margin: 5%;  
+      flex-direction: column;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 98%;
+      margin: 1%;
+    }
+
+    .content a {
+      display: flex;
+      align-items: center;
+
+    }
+
+
   }
 
 </style>
@@ -175,14 +248,17 @@
               </h2>
               <p>
                 Subscribe to the Brown Girl Green Youtube channel to watch videos about my journey trying (and failing) to live sustainably, coping with the planet being on fire, and other dank moments. 
-              </p> 
+              </p>
+              <div class="content-button">
+                <a href="random">WATCH</a>
+              </div> 
             </div>  
           </div>
 
           <div class="content">
             <div clas="podcast-box">
               <a target="_blank" href="images/me.jpg">
-                <img src="pics/IMG_5181.jpg" style="width:100%" >
+                <img src="pics/IMG_1941.jpg" style="width:100%" >
               </a>
               <h2>
                 PODCAST
@@ -190,6 +266,9 @@
               <p>
                 The Brown Girl Green podcast interviews a variety of environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis.  
               </p> 
+              <div class="content-button">
+                <a href="random">LISTEN</a>
+              </div> 
             </div>  
           </div>
 
@@ -197,7 +276,7 @@
           <div class="content">
             <div clas="blog-box">
               <a target="_blank" href="images/me.jpg">
-                <img src="pics/IMG_000.jpg" style="width:100%" >
+                <img src="pics/IMG_000.jpg" style="width:90%" >
               </a>
               <h2>
                 BLOG
@@ -205,15 +284,20 @@
               <p>
                 Stay up to date with the latest Brown Girl Green news, episodes, favorite articles, and resources to engage your friends and family about the climate crisis. The planet is lit, and so are we.  
               </p> 
+              <div class="content-button">
+                <a href="random">READ</a>
+              </div> 
             </div>  
           </div>
 
 
 
-
-
-
         </div>
+
+
+        <footer>
+          
+        </footer>
         
       
     </div>
