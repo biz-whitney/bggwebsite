@@ -58,8 +58,8 @@
   }
   
   #headshot{
-    width: 40%;
-    height: 50%;
+    width: 50%;
+    height: 60%;
     object-fit: cover;
     display: flex; 
     align-items: center;
@@ -98,6 +98,28 @@
     font-size: 2em;
   }
 
+
+  .content-container {
+    display: flex;
+    justify-content: space-around;
+    font-family: bggfont;
+    margin: 5%;  
+    flex: wrap;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 1%;
+  }
+
+  video {
+    z-index: 1;
+    opacity: 0.78;
+    width: 100%;
+  }
+
 </style>
 
 
@@ -127,7 +149,7 @@
         </header>
 
         <div class="aboutme">
-          <img id='headshot' src='pics/IMG_5181.jpg' alt= 'Head shot'>
+          <img id='headshot' src='pics/IMG_001.jpg' alt= 'Head shot'>
           <h1 class="name">
             <b>Kristy Drutman</b>
           </h1>
@@ -141,9 +163,55 @@
 
 
         <div class="content-container">
+
           <div class="content">
-            
+            <div clas="youtube-box">
+              <div class="video-container">
+                <video src="pics/kristyvidbgg2.mp4" autoplay="true" loop="true" muted="true">
+                </video>
+              </div>
+              <h2>
+                YOUTUBE CHANNEL
+              </h2>
+              <p>
+                Subscribe to the Brown Girl Green Youtube channel to watch videos about my journey trying (and failing) to live sustainably, coping with the planet being on fire, and other dank moments. 
+              </p> 
+            </div>  
           </div>
+
+          <div class="content">
+            <div clas="podcast-box">
+              <a target="_blank" href="images/me.jpg">
+                <img src="pics/IMG_5181.jpg" style="width:100%" >
+              </a>
+              <h2>
+                PODCAST
+              </h2>
+              <p>
+                The Brown Girl Green podcast interviews a variety of environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis.  
+              </p> 
+            </div>  
+          </div>
+
+
+          <div class="content">
+            <div clas="blog-box">
+              <a target="_blank" href="images/me.jpg">
+                <img src="pics/IMG_000.jpg" style="width:100%" >
+              </a>
+              <h2>
+                BLOG
+              </h2>
+              <p>
+                Stay up to date with the latest Brown Girl Green news, episodes, favorite articles, and resources to engage your friends and family about the climate crisis. The planet is lit, and so are we.  
+              </p> 
+            </div>  
+          </div>
+
+
+
+
+
 
         </div>
         
