@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<html lang='en'>
+
+
+<style>
+.about {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+
+}
+
+#headshot{
+  width: 45%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.about-text {
+  margin-right: 5%;
+}
+
+.about-text h1 {
+  margin-bottom: 5%;
+  font-size: 4em;
+}
+
+.about-text h2 {
+  margin-bottom: 5%;
+  font-size: 2em;
+}
+
+.about-text p {
+  margin-bottom: 5%;
+  font-size: 1.5em;
+}
+
+
+@media(max-width: 700px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  #headshot{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="menustyle.css">
+  <title> Home Page</title>
+</head>
+<body>
+
+
+    <div class="topbar">
+      <h1 class="bgg">
+        <p> BGG</p>
+      </h1>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href='index.html'  class="active">Home</a> 
+          <a href='about.html'>About</a> 
+          <a href='podcast.html'>Podcast</a> 
+          <a href='youtube.html'>Youtube</a> 
+          <a href='bookme.html'>Speaking/Book Me</a> 
+          <a href='support.html'>Support/Contact</a> 
+        </div>
+      </div>
+    </div>
+
+    <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <div class="about">
+      <div class="about-text"> 
+        <h1>
+          About
+        </h1>
+        <h2>
+          Kristy Drutman otherwise known as, “Brown Girl Green” is a “Jew-Pina” American environmental media host, activist, and digital media strategist. 
+        </h2>
+        <p>
+           Kristy is passionate about working at the intersections between media, diversity, and environmentalism. As a youth climate activist, Kristy has spoken in front of thousands as well as facilitated workshops centered around environmental media and storytelling in cities across the United States. She has also worked with youth from around the world to create collaborative, intersectional online media with the goal of creating conscious, culturally relevant content to engage audiences about proactive solution-building to the climate crisis.
+        </p>
+      </div>
+      <img id='headshot' src='pics/IMG_5181.jpg' alt= 'Head shot'>
+    </div>
+
+
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "80%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+     
+</body>
+</html>
