@@ -33,56 +33,13 @@
   justify-content: center;
 }
 
-/* 
-.closebtn {
-  display: none;
-}
-
-
-.overlay-content {
-  display: flex;
-  justify-content: space-around;
-}
-
 span {
-  display: none;
-}*/
-
-  .aboutme {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #headshot{
-    width: 60%;
-    height: 70%;
-    object-fit: cover;
-    display: flex; 
-    align-items: center;
-    justify-content: center; 
-    margin: 4%;
-  }
-
-  .bio {
-    width: 80%;
-    margin: 2%;
-    font-size: 2em;
-  }
-  .name {
-    font-size: 3em;
-  }
-
-/*@media (max-width: 700px) {*/
-  span {
-    display: flex;
-    position: fixed;
-    top: 5%;
-    left: 5%;
-  }
-  .overlay {
+  display: flex;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+.overlay {
   height: 100%;
   width: 0;
   position: fixed;
@@ -125,14 +82,158 @@ span {
   font-size: 60px;
 }
 
-  /*@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+  .aboutme {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #headshot{
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin: 4%;
+  }
+
+  .bio {
+    width: 80%;
+    margin: 2%;
+    font-size: 2em;
+  }
+  .name {
+    font-size: 3em;
+  }
+
+    a:link,
+  a:visited {
+    color: none;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .button a:hover {
+    color: green;
+    text-decoration: none;
+  }
+  .button {
+    display: block;
+    background-color: black;
+    font-size: 2em;
+  }
+
+
+  .content-container {
+    display: flex;
+    justify-content: space-around;
+    font-family: bggfont;
+    margin: 5%;  
+    flex: wrap;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 1%;
+  }
+
+  .content a {
+    display: flex;
+    align-items: center;
+
+  }
+
+  video {
+    z-index: 1;
+    opacity: 0.78;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .content-button {
+    /*display: flex;
+    border: 1px solid #A1B09D;
+    display: block;
+    background-color: black;*/
+    width: 20%;
+  
+  }
+  .content-button a {
+    /*display: flex;
+    border: 1px solid #A1B09D;*/
+    color: red;
+    border: 1px solid #A1B09D;
+  }
+
+
+
+  /*For smaller screens*/
+  @media(max-width: 700px) {
+    .aboutme {
+      display: flex;
+      width: 95%;
     }
-  }*/
+    .bio {
+      width: 100%;
+      margin: 1%;
+      font-size: 1.5em;
+    }
+    .name {
+      font-size: 2em;
+    }
+    .button {
+      display: block;
+      background-color: black;
+      font-size: 1em;
+    }
+
+    #headshot{
+      width: 100%;
+      height: 70%;
+    }
+
+    .content-container {
+      display: flex;
+      font-family: bggfont;
+      margin: 5%;  
+      flex-direction: column;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 98%;
+      margin: 1%;
+    }
+
+    .content a {
+      display: flex;
+      align-items: center;
+
+    }
+
+  }
+
+
+
 
 
 </style>
@@ -170,6 +271,74 @@ span {
         <a href='about.html'>More About Me</a>
       </h1>
     </div>
+
+
+
+            <div class="content-container">
+
+          <div class="content">
+            <div clas="youtube-box">
+              <div class="video-container">
+                <video src="pics/kristyvidbgg2.mp4" autoplay="true" loop="true" muted="true">
+                </video>
+              </div>
+              <h2>
+                YOUTUBE CHANNEL
+              </h2>
+              <p>
+                Subscribe to the Brown Girl Green Youtube channel to watch videos about my journey trying (and failing) to live sustainably, coping with the planet being on fire, and other dank moments. 
+              </p>
+
+              <div class="content-button">
+                <a href="random">WATCH</a>
+              </div> 
+
+            </div>  
+          </div>
+
+          <div class="content">
+            <div clas="podcast-box">
+              <a target="_blank" href="images/me.jpg">
+                <img src="pics/IMG_1941.jpg" style="width:100%" >
+              </a>
+              <h2>
+                PODCAST
+              </h2>
+              <p>
+                The Brown Girl Green podcast interviews a variety of environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis.  
+              </p> 
+              <div class="content-button">
+                <a href="random">LISTEN</a>
+              </div> 
+            </div>  
+          </div>
+
+
+          <div class="content">
+            <div clas="blog-box">
+              <a target="_blank" href="images/me.jpg">
+                <img src="pics/IMG_000.jpg" style="width:90%" >
+              </a>
+              <h2>
+                BLOG
+              </h2>
+              <p>
+                Stay up to date with the latest Brown Girl Green news, episodes, favorite articles, and resources to engage your friends and family about the climate crisis. The planet is lit, and so are we.  
+              </p> 
+              <div class="content-button">
+                <a href="random">READ</a>
+              </div> 
+            </div>  
+          </div>
+
+
+
+        </div>
+
+
+        <footer>
+          
+        </footer>
   
 
 
