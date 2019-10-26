@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<html lang='en'>
+
+<style>
+
+  * {
+    box-sizing: border-box; 
+    margin: 0;
+    color: #f3f5f3;
+  }
+
+  @font-face {
+    font-family: bggfont;
+    src: url(Apercu/Apercu_Regular.otf);
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #135450;
+    flex-direction: column;
+    font-family: bggfont;
+    padding: 0;
+  }
+
+.bgg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ 
+.closebtn {
+  display: none;
+}
+
+.overlay-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+span {
+  display: none;
+}
+
+  .aboutme {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #headshot{
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin: 4%;
+  }
+
+  .bio {
+    width: 80%;
+    margin: 2%;
+    font-size: 2em;
+  }
+  .name {
+    font-size: 3em;
+  }
+
+@media (max-width: 700px) {
+  span {
+    display: flex;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+  }
+  .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+  /*@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }*/
+}
+
+</style>
+</head>
+<body>
+
+
+    <h1 class="bgg">
+      <p> BGG</p>
+    </h1>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href='index.html'  class="active">Home</a> 
+        <a href='about.html'>About</a> 
+        <a href='podcast.html'>Podcast</a> 
+        <a href='youtube.html'>Youtube</a> 
+        <a href='bookme.html'>Speaking/Book Me</a> 
+        <a href='support.html'>Support/Contact</a> 
+      </div>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <div class="aboutme">
+      <img id='headshot' src='pics/IMG_001.jpg' alt= 'Head shot'>
+      <h1 class="name">
+        <b>Kristy Drutman</b>
+      </h1>
+      <p class="bio">
+      Brown Girl Green is a podcast and media series created by Kristy Drutman. She interviews environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis. She is working to change the image of what it means to be an environmentalist in the 21st century. 
+      </p>
+      <h1 class="button">
+        <a href='about.html'>More About Me</a>
+      </h1>
+    </div>
+  
+
+
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "80%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+</html>
