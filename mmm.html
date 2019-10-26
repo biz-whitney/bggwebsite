@@ -147,11 +147,11 @@ span {
     text-decoration: underline;
   }
 
-  .button a:hover {
+  button:hover, .button a:hover {
     color: #0ce8e8;
     text-decoration: none;
   }
-  .button {
+  button, .button {
     display: block;
     background-color: #209191;
     font-size: 1.5em;
@@ -210,6 +210,29 @@ span {
     color: red;
     border: 1px solid #A1B09D;
   }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+  }
+
+  /*button:hover {
+    color: green;
+    background-color: green;
+    border-color: green;
+  }*/
+
+  /*button {
+    display: flex;
+    justify-content: center;
+    background-color: #209191;
+    align-items: center;
+    font-size: 1.5em;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #172121;
+  }*/
 
 
 
@@ -280,10 +303,16 @@ span {
     .name {
       font-size: 2em;
     }
-    .button {
+    button {
       border-width: 1px;
-      font-size: 1em;
+      font-size: 1.2em;
     }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+  }
 
     #headshot{
       width: 100%;
@@ -382,9 +411,9 @@ span {
             Subscribe to the Brown Girl Green Youtube channel to watch videos about my journey trying (and failing) to live sustainably, coping with the planet being on fire, and other dank moments. 
           </p>
 
-          <div class="content-button">
-            <a href="random">WATCH</a>
-          </div> 
+          <div class="button-container">
+            <button onclick="window.location.href = 'index.html';">Watch</button>
+          </div>
 
         </div>  
       </div>
@@ -400,9 +429,9 @@ span {
           <p>
             The Brown Girl Green podcast interviews a variety of environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis.  
           </p> 
-          <div class="content-button">
-            <a href="random">LISTEN</a>
-          </div> 
+          <div class="button-container">
+            <button onclick="window.location.href = 'random.html';">Listen</button>
+          </div>
         </div>  
       </div>
 
@@ -418,9 +447,9 @@ span {
           <p>
             Stay up to date with the latest Brown Girl Green news, episodes, favorite articles, and resources to engage your friends and family about the climate crisis. The planet is lit, and so are we.  
           </p> 
-          <div class="content-button">
-            <a href="random">READ</a>
-          </div> 
+          <div class="button-container">
+            <button onclick="window.location.href = 'random.html';">Read</button>
+          </div>
         </div>  
       </div>
 
