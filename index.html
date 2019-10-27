@@ -43,13 +43,17 @@
     color: #0ce8e8;
     text-decoration: none;
   }
-  button, .button {
+
+
+  button {
+    color: #f3f5f3;
+    background-color: #135450;
     display: block;
-    background-color: #209191;
-    font-size: 1.5em;
+    font-size: 2.5em;
     border-style: solid;
     border-color: #172121;
     border-width: 2px;
+    cursor: pointer;
   }
   .content-container {
     display: flex;
@@ -85,6 +89,10 @@
     justify-content: center;
     margin: 5%;
   }
+
+  img {
+    cursor: default;
+  }
   
   @media(max-width: 700px) {
 
@@ -102,8 +110,9 @@
     }
     button {
       border-width: 1px;
-      font-size: 1.2em;
+      font-size: 2.0em;
     }
+    
   .button-container {
     display: flex;
     justify-content: center;
@@ -170,9 +179,9 @@
       <p class="bio">
       Brown Girl Green is a podcast and media series created by Kristy Drutman. She interviews environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis. She is working to change the image of what it means to be an environmentalist in the 21st century. 
       </p>
-      <h1 class="button">
-        <a href='about.html'>More About Me</a>
-      </h1>
+      <div class="bio-button">
+        <button onclick="window.location.href = 'about.html';">More About Me</button>
+      </div>
     </div>
 
 
