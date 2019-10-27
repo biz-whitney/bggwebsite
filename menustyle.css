@@ -183,7 +183,7 @@ a:hover {
     .overlay-logo {
       display: flex;
       position: absolute;
-      left: 25%;
+      left: 20%;
       top: 10px;
       height: 60px;
     }
