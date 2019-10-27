@@ -3,9 +3,12 @@
   margin: 0;
   /*color: #172121;*/
   color:  #135450;
-  text-align: justify;
 }
 
+@font-face {
+  font-family: bggfont;
+  src: url(Apercu/Apercu_Regular.otf);
+}
 
 
 body {
@@ -65,7 +68,6 @@ span {
   overflow-x: hidden;
   transition: 0.5s;
   align-items: center;
-
 }
 
 .overlay-content {
@@ -87,7 +89,7 @@ span {
   transition: 0.3s;
   background-color: #135450;
   margin: 1px;
-  text-align: center;
+
 
 }
 
@@ -124,7 +126,7 @@ a:hover {
 
 
   /*For smaller screens*/
-  @media(max-width: 800px) {
+  @media(max-width: 700px) {
 
     .overlay .closebtn {
       width: 30px;
