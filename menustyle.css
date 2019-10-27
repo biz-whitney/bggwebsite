@@ -123,7 +123,7 @@ a:hover {
 
 
   /*For smaller screens*/
-  @media(max-width: 700px) {
+  @media screen and (max-width: 700px) {
 
     .overlay .closebtn {
       width: 30px;
