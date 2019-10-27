@@ -4,11 +4,46 @@
 
 
 <style>
+.about {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+
+}
+
+#headshot{
+  width: 45%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.about-text {
+  margin-right: 5%;
+}
+
+.about-text h1 {
+  margin-bottom: 5%;
+  font-size: 4em;
+}
+
+.about-text h2 {
+  margin-bottom: 5%;
+  font-size: 2em;
+}
+
+.about-text p {
+  margin-bottom: 5%;
+  font-size: 1.5em;
+}
+
+
 
 * {
   box-sizing: border-box; 
   margin: 0;
   color: #172121;
+  /*color:  #135450;*/
 }
 
 @font-face {
@@ -31,19 +66,27 @@ body {
 .topbar {
   display: flex;
   width: 100%;
-  height: 30%;
+  height: 200px;
   top: 0;
   background-color: black;
   z-index: 3;
   justify-content: center;
-  background-color: #135450;
+  background-color: #A1B09D;
+  /*background-color: #135450;*/
 }
 
-.bgg {
+
+.logo {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 6em;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 60%;
+  z-index: 10;
 }
 
 span {
@@ -97,34 +140,7 @@ span {
   font-size: 60px;
 }
 
-.aboutme {
-  display: flex;
-  width: 80%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-#headshot{
-  width: 60%;
-  height: 70%;
-  object-fit: cover;
-  display: flex; 
-  align-items: center;
-  justify-content: center; 
-  margin: 4%;
-
-}
-
-.bio {
-  width: 80%;
-  margin: 2%;
-  font-size: 2em;
-}
-
-.name {
-  font-size: 3em;
-}
 
 a:link,
 a:visited {
@@ -135,71 +151,6 @@ a:visited {
 a:hover {
   text-decoration: underline;
 }
-
-button:hover, .button a:hover {
-  color: #0ce8e8;
-  text-decoration: none;
-}
-
-button, .button {
-  display: block;
-  background-color: #209191;
-  font-size: 1.5em;
-  border-style: solid;
-  border-color: #172121;
-  border-width: 2px;
-}
-
-.content-container {
-  display: flex;
-  justify-content: space-around;
-  font-family: bggfont;
-  margin: 5%;  
-  flex: wrap;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  margin: 1%;
-}
-
-.content a {
-  display: flex;
-  align-items: center;
-}
-
-video {
-  z-index: 1;
-  opacity: 0.78;
-  width: 100%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.video-container {
-  margin-top: 6%;
-  margin-bottom: 6%;
-}
-
-.content-button {
-  width: 20%;
-
-}
-.content-button a {
-  color: red;
-  border: 1px solid #A1B09D;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin: 5%;
-}
-
-
-
 
 
   /*For smaller screens*/
@@ -227,66 +178,68 @@ video {
       background-color: black;
       z-index: 3;
       justify-content: center;
-      background-color: #135450;
+      background-color: #A1B09D;
+      /*background-color: #135450;*/
     }
 
-    .bgg {
-      font-size: 2em;
-    }
-
-    .aboutme {
-      display: flex;
-      width: 100%;
-    }
-
-    .bio {
-      width: 98%;
-      margin: 1%;
-      font-size: 1.5em;
-    }
-
-    .name {
-      font-size: 2em;
-    }
-
-    button {
-      border-width: 1px;
-      font-size: 1.2em;
-    }
-
-    .button-container {
+    .logo {
       display: flex;
       justify-content: center;
-      margin: 2%;
+      width: 150px;
+      margin-top: 5px;
     }
 
-    #headshot{
-      width: 100%;
-      height: 100%;
-      margin-top: 58px;
-      
-    }
-
-    .content-container {
-      display: flex;
-      font-family: bggfont;
-      margin: 5%;  
-      flex-direction: column;
-    }
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      width: 98%;
-      margin-top: 15%;
-    }
-
-    .content a {
-      display: flex;
-      align-items: center;
+    .logo img {
+      max-width: 100%;
+      max-height: 100%;
+      z-index: 10;
     }
 
   }
+
+
+
+@media(max-width: 700px) {
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  #headshot{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+
+    width: 95%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+
+  .about-text h1 {
+    margin-right: none;
+    font-size: 3em;
+  }
+
+  .about-text h2 {
+    margin-right: none;
+    font-size: 1.5em;
+  }
+
+  .about-text p {
+    margin-right: none;
+    font-size: 1em;
+  }
+}
+
 
 
 
@@ -296,16 +249,18 @@ video {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="webfrontkit/style.css">
-  <title> Home Page</title>
+  <link rel="stylesheet" type="text/css" href="none.css">
+  <title> About </title>
 </head>
 <body>
 
 
     <div class="topbar">
-      <h1 class="bgg">
-        <p> BGG</p>
+      
+      <h1 class="logo">
+        <img src="bgg_logo1.png"
       </h1>
+     
 
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -322,95 +277,34 @@ video {
 
     <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
 
-    <div class="aboutme">
-      <img id='headshot' src='pics/IMG_001.jpg' alt= 'Head shot'>
-      <h1 class="name">
-        <b>Kristy Drutman</b>
-      </h1>
-      <p class="bio">
-      Brown Girl Green is a podcast and media series created by Kristy Drutman. She interviews environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis. She is working to change the image of what it means to be an environmentalist in the 21st century. 
-      </p>
-      <h1 class="button">
-        <a href='about.html'>More About Me</a>
-      </h1>
+  
+
+    <div class="about">
+      <div class="about-text"> 
+        <h1>
+          About
+        </h1>
+        <h2>
+          Kristy Drutman otherwise known as, “Brown Girl Green” is a “Jew-Pina” American environmental media host, activist, and digital media strategist. 
+        </h2>
+        <p>
+           Kristy is passionate about working at the intersections between media, diversity, and environmentalism. As a youth climate activist, Kristy has spoken in front of thousands as well as facilitated workshops centered around environmental media and storytelling in cities across the United States. She has also worked with youth from around the world to create collaborative, intersectional online media with the goal of creating conscious, culturally relevant content to engage audiences about proactive solution-building to the climate crisis.
+        </p>
+      </div>
+      <img id='headshot' src='pics/IMG_5181.jpg' alt= 'Head shot'>
     </div>
 
 
 
-    <div class="content-container">
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "80%";
+    }
 
-      <div class="content">
-        <div clas="youtube-box">
-          <div class="video-container">
-            <!--<video src="pics/kristyvidbgg2.mp4" autoplay="true" loop="true" muted="true">
-            </video>-->
-            <a target="_blank" href="images/me.jpg">
-            <img src="pics/backup.jpg" style="width:100%" >
-          </a>
-          </div>
-          
-          <h2>
-            YOUTUBE CHANNEL
-          </h2>
-          <p>
-            Subscribe to the Brown Girl Green Youtube channel to watch videos about my journey trying (and failing) to live sustainably, coping with the planet being on fire, and other dank moments. 
-          </p>
-
-          <div class="button-container">
-            <button onclick="window.location.href = 'index.html';">Watch</button>
-          </div>
-
-        </div>  
-      </div>
-
-      <div class="content">
-        <div clas="podcast-box">
-          <a target="_blank" href="images/me.jpg">
-            <img src="pics/img_003.jpg" style="width:100%" >
-          </a>
-          <h2>
-            PODCAST
-          </h2>
-          <p>
-            The Brown Girl Green podcast interviews a variety of environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis.  
-          </p> 
-          <div class="button-container">
-            <button onclick="window.location.href = 'random.html';">Listen</button>
-          </div>
-        </div>  
-      </div>
-
-
-      <div class="content">
-        <div clas="blog-box">
-          <a target="_blank" href="images/me.jpg">
-            <img src="pics/IMG_000.jpg" style="width:90%" >
-          </a>
-          <h2>
-            BLOG
-          </h2>
-          <p>
-            Stay up to date with the latest Brown Girl Green news, episodes, favorite articles, and resources to engage your friends and family about the climate crisis. The planet is lit, and so are we.  
-          </p> 
-          <div class="button-container">
-            <button onclick="window.location.href = 'random.html';">Read</button>
-          </div>
-        </div>  
-      </div>
-
-
-    </div>
-
-
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "80%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
      
 </body>
 </html>
