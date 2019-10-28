@@ -112,6 +112,19 @@ span {
   font-size: 60px;
 }
 
+.newsletter {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 50px 0px;
+}
+
+footer {
+ 
+  background-color: #A1B09D;
+  width: 100%;
+  margin: 40px 0px 0px 0px;
+ 
+}
 
 
 a:link,
