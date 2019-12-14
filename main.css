@@ -1,0 +1,172 @@
+body {
+  background-color: #f3f5f3;
+  /*color: #135450;*/
+  color: red;
+}
+/*--- navigation bar ---*/
+@media (min-width: 1001px) {
+	.navbar-nav {
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  font-size: 0.7em;
+	  text-align: center;
+	}
+}
+
+/*.section-one{
+	margin-top: 170px;
+}
+*/
+/*.section-two {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 80%;
+	height: 50px;
+}*/
+
+
+.nav-item {
+	/*background-color: #135450;*/
+	margin: 5px 5px 5px 5px;
+	font-size: 1em;
+	display: block;
+}
+
+.nav-item a {
+	display: flex;
+	justify-content: center;
+	margin-left: 20%;
+	font-size: 3em;	
+}
+
+ .nav-item a:hover {
+ 	cursor: pointer;
+ }
+
+.navbar-brand img {
+	max-width: 250px;
+  	max-height: 250px;
+}
+.navbar {
+  background:#A1B09D;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 5;
+}
+.nav-link,
+.navbar-brand {
+  color: #f3f5f3;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: space-around;
+}
+
+
+/*.section-one{
+	margin-top: 200px;
+}*/
+
+
+/* footer information*/
+.newsletter {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 40px 0px;
+}
+
+footer {
+  background-color: #A1B09D;
+  width: 100%;
+  margin: 40px 0px 0px 0px; 
+}
+
+.social-media {
+  display: flex;
+  justify-content: center; 
+  padding-bottom: 30px;
+}
+
+.social-media img {
+  width: 60px;
+  height: 60px;
+  margin: 0px 3px 0px 3px;
+}
+
+.social-media a img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1001px) {
+	.section-one{
+		margin-top: 120px;
+	}
+	.navbar-nav {
+		margin-top: 50px;
+	}
+	.nav-item {
+		background-color: #135450;
+		margin: 5px 5px 5px 5px;
+		font-size: 0.5em;
+	}
+
+	.navbar-toggler-ico {
+		font-size: 3em;
+		color: #135450;
+
+	}
+
+	.navbar-brand img {
+		max-width: 200px;
+	  	max-height: 200px;
+	}
+	.navbar {
+	  background:#A1B09D;
+	  position: fixed;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 100px;
+	  z-index: 5
+	}
+
+	.navbar-collapse {
+		background-color: #A1B09D;
+	    position: absolute;
+	    top: 80px;
+	    left: -100%;
+	    height: 100vh;
+	    width: 70%;
+	    transition: all 0.4s ease;
+	    display: block;
+	    opacity: 0.8;
+	    text-align: center;
+	    overflow-x: hidden;
+	}
+	.navbar-collapse.collapsing {
+	    height: auto !important;
+	    left: -100%;
+	    margin-left: 1px;
+	    transition: all 0.2s ease;
+	    opacity: 0.9;
+	}
+	.navbar-collapse.show {
+	    margin-left: 100%;
+	    transition: all 0.2s ease;
+	    opacity: 1;
+	}
+}
