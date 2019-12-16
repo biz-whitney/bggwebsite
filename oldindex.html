@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<html lang='en'>
+
+
+
+<style>
+
+  .aboutme {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #headshot{
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin: 4%;
+  }
+  .bio {
+    width: 80%;
+    margin: 2%;
+    font-size: 2em;
+  }
+  .name {
+    font-size: 3em;
+  }
+  a:link,
+  a:visited {
+    color: none;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  button:hover, .button a:hover {
+    opacity: 0.5;
+  }
+
+
+  button {
+    color: #f3f5f3;
+    background-color: #135450;
+    display: block;
+    font-size: 2.5em;
+    border-style: solid;
+    border-color: #172121;
+    border-width: 2px;
+    cursor: pointer;
+  }
+  
+  .follow {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .follow h1 {
+    font-size: 5em;
+    font:bggbold;
+    font-weight: bold;
+    margin-left: 5px;
+
+
+  }
+
+
+  .content-container {
+    display: flex;
+    justify-content: space-around;
+    font-family: bggfont; 
+    flex: wrap;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 1%;
+  }
+  .content a {
+    display: flex;
+    align-items: center;
+  }
+
+  .content a, 
+  .content h2, 
+  .content p{
+      display: flex;
+      align-items: center;
+      margin: 0px 0px 10px 0px;
+    }
+  video {
+    z-index: 1;
+    opacity: 0.78;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+  }
+
+
+  img {
+    cursor: default;
+  }
+  
+  @media screen and (max-width: 700px) {
+
+    .aboutme {
+      display: flex;
+      width: 100%;
+    }
+    .bio {
+      width: 98%;
+      margin: 1%;
+      font-size: 1.4em;
+      text-align: justify;
+    }
+
+   
+    .name {
+      font-size: 2em;
+    }
+
+    .aboutme button {
+      margin-top: 20px;
+    }
+
+      .follow {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .follow h1 {
+    font-size: 4em;
+    font:bggbold;
+    font-weight: bold;
+    margin-left: 5px;
+
+  }
+    button {
+      border-width: 1px;
+      font-size: 2.0em;
+    }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+  }
+    #headshot{
+      width: 100%;
+      height: 100%;
+      margin-top: 58px;
+      
+    }
+
+
+
+
+    .content-container {
+      display: flex;
+      font-family: bggfont;
+      margin: 0px 5px 0px 5px;
+      flex-direction: column;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 98%;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    .content a, 
+    .content h2, 
+    .content p{
+      display: flex;
+      align-items: center;
+      margin: 0px 0px 10px 0px;
+    }
+
+    .blog-box img {
+      width: 50%;
+    }
+
+
+
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="menustyle.css">
+  <title> Home Page</title>
+</head>
+<body>
+
+
+    <div class="topbar">
+      <h1 class="logo">
+        <img src="bgg_logo1.png">
+      </h1>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-logo">
+          <h1 class="logo">
+            <img src="bgg_logo1.png">
+          </h1>
+        </div>
+        <div class="overlay-content">
+          <a href='index.html'  class="active">Home</a> 
+          <a href='about.html'>About</a> 
+          <a href='podcast.html'>Podcast</a> 
+          <a href='youtube.html'>Youtube</a> 
+          <a href='carousel.html'>Speaking/Book Me</a> 
+          <a href='sampleabout.html'>Support/Contact</a> 
+        </div>
+      </div>
+    </div>
+
+    <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <div class="aboutme">
+      <img id='headshot' src='pics/IMG_001.jpg' alt= 'Head shot'>
+      <h1 class="name">
+        <b>Kristy Drutman</b>
+      </h1>
+      <p class="bio">
+      Brown Girl Green is a podcast and media series created by Kristy Drutman. She interviews environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis. She is working to change the image of what it means to be an environmentalist in the 21st century. 
+      </p>
+      <div class="bio-button">
+        <button onclick="window.location.href = 'about.html';">More About Me</button>
+      </div>
+    </div>
+
+
+    <div class="follow">
+      <h1> <strong>Follow BGG</strong> </h1>
+    </div>
+
+    <div class="content-container">
+
+      <div class="content">
+        <div class="youtube-box">
+          <div class="video-container">
+            <!--<video src="pics/kristyvidbgg2.mp4" autoplay="true" loop="true" muted="true">
+            </video>-->
+            <a target="_blank">
+            <img src="pics/backup.png" style="width:99%" >
+          </a>
+          </div>
+          
+          <h2>
+            YOUTUBE CHANNEL
+          </h2>
+          <p>
+            Subscribe to the Brown Girl Green Youtube channel to watch videos about my journey trying (and failing) to live sustainably, coping with the planet being on fire, and other dank moments. 
+          </p>
+
+          <div class="button-container">
+            <button onclick="window.location.href = 'index.html';">Watch</button>
+          </div>
+
+        </div>  
+      </div>
+
+      <div class="content">
+        <div class="podcast-box">
+          <a target="_blank">
+            <img src="pics/img_003.jpg" style="width:100%" >
+          </a>
+          <h2>
+            PODCAST
+          </h2>
+          <p>
+            The Brown Girl Green podcast interviews a variety of environmental leaders and advocates about diversity and inclusion as well as creative solutions for coping with the climate crisis.  
+          </p> 
+          <div class="button-container">
+            <button onclick="window.location.href = 'random.html';">Listen</button>
+          </div>
+        </div>  
+      </div>
+
+
+      <div class="content">
+        <div class="blog-box">
+          <a target="_blank">
+            <img src="pics/IMG_000.jpg" style="width:94%" >
+          </a>
+          <h2>
+            BLOG
+          </h2>
+          <p>
+            Stay up to date with the latest Brown Girl Green news, episodes, favorite articles, and resources to engage your friends and family about the climate crisis. The planet is lit, and so are we.  
+          </p> 
+          <div class="button-container">
+            <button onclick="window.location.href = 'random.html';">Read</button>
+          </div>
+        </div>  
+      </div>
+
+
+
+    </div>
+
+
+
+    <footer>
+      <div class="newsletter">
+  
+        <!-- Begin Mailchimp Signup Form -->
+        <style type="text/css">
+  
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+        <form action="https://kristydrutman.us18.list-manage.com/subscribe/post?u=867b3feac109de07f86e678fd&amp;id=9d29757190" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">Join the Brown Girl Green Newsletter</label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_867b3feac109de07f86e678fd_9d29757190" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+      </div>
+      <div class="social-media">
+        <a href="https://www.instagram.com/browngirl_green/"><img src='social_media_icons/Instagram.png' /></a>
+        <a href="https://twitter.com/browngirl_green"><img src='social_media_icons/Twitter.png' /></a>
+        <a href="https://m.youtube.com/channel/UC9-IprVzq3VybJae_lqrXjA"><img src='social_media_icons/YouTube.png' /></a>
+        <a href="https://www.linkedin.com/in/kristy-drutman?trk=people-guest_profile-result-card_result-card_full-click"><img src='social_media_icons/Linkedin.png' /></a>
+      </div>
+    </footer>
+    <!--End mc_embed_signup-->
+
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"867b3feac109de07f86e678fd","lid":"9d29757190","uniqueMethods":true}) })</script> 
+
+
+
+      
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "80%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+</html>
