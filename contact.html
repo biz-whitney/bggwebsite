@@ -2,7 +2,7 @@
 <html>
 <html lang='en'>
 <head>
-	<title>About</title>
+	<title>Contact</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -11,11 +11,16 @@
 
 <style>
 
-
-.about {
+.contact-title {
   display: flex;
   justify-content: center;
-  margin: 20px 10% 0px 10%;
+  margin: 2% 0px 0px 0px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin: 10px 10% 0px 10%;
 }
 
 #headshot{
@@ -25,33 +30,23 @@
 }
 
 
-.about-text {
-  margin-right: 5%;
+.contact-text {
+  margin-left: 5%;
 }
 
-.about-text h1 {
-  margin-bottom: 5%;
-  font-size: 4em;
-
-}
-
-.about-text h2 {
+.contact-text h2 {
   margin-bottom: 5%;
   font-size: 2em;
   text-align: center;
 }
 
-.about-text p {
-  margin-bottom: 5%;
-  font-size: 1.5em;
-}
 
 
 
 
 @media screen and (max-width: 700px) {
 
-  .about {
+  .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +60,7 @@
     object-fit: cover;
   }
 
-  .about-text {
+  .contact-text {
     display: flex;
     flex-direction: column;
 
@@ -74,21 +69,11 @@
     margin-left: 2%;
   }
 
-  .about-text h1 {
-    margin-right: none;
-    font-size: 3em;
-  }
 
-  .about-text h2 {
+  .contact-text h2 {
     margin-right: none;
     font-size: 1.5em;
     text-align: center;
-  }
-
-  .about-text p {
-    margin-right: none;
-    font-size: 1em;
-    text-align: justify;
   }
 }
 
@@ -124,20 +109,17 @@
 	  </div>
 	</nav>
 
+  <div class="contact-title">
+    <h1>Contact Me!</h1>
+  </div>
 	
-   <div class="about">
-      <div class="about-text"> 
-        <h1>
-          About
-        </h1>
-        <h2>
-          Kristy Drutman otherwise known as, “Brown Girl Green” is a <em>Jew-Pina</em> American environmental media host, speaker, activist, and digital media strategist. 
-        </h2>
-        <p>
-           Kristy is passionate about working at the intersections between media, diversity, and environmentalism. As a youth climate activist, Kristy has spoken in front of thousands as well as facilitated workshops centered around environmental media and storytelling in cities across the United States. She has also worked with youth from around the world to create collaborative, intersectional online media with the goal of creating conscious, culturally relevant content to engage audiences about proactive solution-building to the climate crisis.
-        </p>
-      </div>
-      <img id='headshot' src='pics/IMG_5181.jpg' alt= 'Head shot'>
+  <div class="contact">
+    <img id='headshot' src='pics/contact_pic.PNG' alt= 'Head shot'>
+    <div class="contact-text"> 
+      <a href="mailto:browngirlgreenshow@gmail.com"> gmail </a>
+      <h2 href="browngirlgreenshow@gmail.com">browngirlgreenshow@gmail.com</h2>
+      <h2>IG</h2>
+    </div>
 	</div>
 
 
