@@ -10,31 +10,69 @@
 </head>
 
 <style>
+body {
+  margin: 0;
 
+}
 
 .podcast {
   margin: 2% 0px 0px 0px;
-  align-content: center;
 }
 
 .media {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.media-text {
+  font-size: 2em;
 }
 
 .btn-container {
   display: flex;
+  flex-direction: row;
+  width: 50%;
   justify-content: space-between;
 }
 
+button {
+  background-color: #135450;
+  color: #f3f5f3;
+}
+
+.media-button {
+  font-size: 2em;
+  margin: 2% 0px 2% 0px;
+}
+
+
 .text-indent {
   margin: 0px 10% 0px 10%;
+  font-size: 2em;
+}
+
+button:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 800px) {
   .text-indent {
     margin: 0px 1% 0px 1%;
   }
+
+  .btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-button {
+  font-size: 2em;
+  margin: 2% 0px 2% 0px;
+}
 
   .podcast {
     margin: 110px 0px 0px 0px;
@@ -84,26 +122,30 @@
 
   <div class="podcast">
     <div class="media">
-      <h3 class="text-indent"> Listen to Brown Girl Green wherever you get your podcasts & hit that subscribe button to help save the planet one podcast at a time:
-      </h3>
+      <div class="text-indent">
+        Listen to Brown Girl Green wherever you get your podcasts & hit that subscribe button to help save the planet one podcast at a time:
+      </div>
       <div class="btn-container">
-        <!--Row with three equal columns-->
-        <button type="button" class="btn">Large button</button>
-        <button type="button" class="btn">Large button</button>
-        <!-- <div class="row">
-            <div class="col-lg-2">
-              <button type="button" class="btn btn-primary btn-lg">Large button</button>
-            </div>
-            <div class="col-lg-2">
-              <button type="button" class="btn btn-primary btn-lg">Large button</button>
-            </div>
-            <div class="col-lg-2">Column right</div>
-        </div> -->
+
+        <div class="media-button">
+          <button onclick="window.location.href = 'https://podcasts.apple.com/us/podcast/brown-girl-green/id1438363074';">I-Tunes</button>
+        </div>
+        <div class="media-button">
+          <button onclick="window.location.href = 'https://open.spotify.com/show/4NreqTdjZvOgxvaNN2njEN';">Spotify</button>
+        </div>
+        <div class="media-button">
+          <button onclick="window.location.href = 'https://soundcloud.com/browngirlgreen';">SoundCloud</button>
+        </div>
+
+        <!-- <div class="btn-media"> <h1>I-Tunes </h1></div>
+        <div class="btn-media">Spotify</div>
+        <div class="btn-media">SoundClound</div> -->
+      
       </div>
     </div>
   
     <div class="container">
-      <!--Row One-->
+      <!-- Row One -->
       <div class="row">
           
           <div class="col-lg-4">
