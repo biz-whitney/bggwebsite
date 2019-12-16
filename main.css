@@ -19,7 +19,6 @@ body {
 
 
 .nav-item {
-	/*background-color: #135450;*/
 	margin: 5px 5px 5px 5px;
 	font-size: 1em;
 	display: block;
@@ -40,6 +39,7 @@ body {
 	max-width: 250px;
   	max-height: 250px;
 }
+
 .navbar {
   background:#A1B09D;
   position: relative;
@@ -49,22 +49,23 @@ body {
   height: 150px;
   z-index: 5;
 }
+
 .nav-link,
 .navbar-brand {
   color: #f3f5f3;
   cursor: pointer;
 }
+
 .nav-link {
   margin-right: 1em !important;
 }
+
 .nav-link:hover {
   color: #000;
 }
 .navbar-collapse {
   justify-content: space-around;
 }
-
-
 
 /* footer information*/
 .newsletter {
@@ -99,48 +100,19 @@ footer {
 
 
 
-@media (max-width: 1001px) {
+@media (max-width: 768px) {
 
-	.social-media img {
-      width: 60px;
-      height: 60px;
-      margin: 0px 3px 0px 3px;
-    }
-
-	.navbar-nav {
-		margin-top: 50px;
-	}
-	.nav-item {
-		background-color: #135450;
-		margin: 5px 5px 5px 5px;
-		font-size: 0.5em;
-	}
-
-	.navbar-toggler-ico {
-		font-size: 3em;
-		color: #135450;
-
-	}
-
-	.navbar-brand img {
-		max-width: 200px;
-	  	max-height: 200px;
-	}
 	.navbar {
-	  background:#A1B09D;
-	  position: fixed;
-	  left: 0;
-	  top: 0;
-	  width: 100%;
-	  height: 100px;
-	  z-index: 5;
-	  overflow-x: hidden;
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 80px;
 	}
 
 	.navbar-collapse {
 		background-color: #A1B09D;
-	    position: absolute;
-	    top: 80px;
+	    position: fixed;
+	    top: 70px;
 	    left: -100%;
 	    height: 100vh;
 	    width: 70%;
@@ -148,21 +120,57 @@ footer {
 	    display: block;
 	    opacity: 0.8;
 	    text-align: center;
-	    overflow-x: hidden;
+	    z-index: 10;
+	 }
 
-	}
 	.navbar-collapse.collapsing {
 	    height: auto !important;
 	    left: -100%;
 	    margin-left: 1px;
 	    transition: all 0.2s ease;
 	    opacity: 0.9;
+	    z-index: 10;
 	}
+
 	.navbar-collapse.show {
 	    margin-left: 100%;
 	    transition: all 0.2s ease;
 	    opacity: 1;
+	    z-index: 10;
 	}
+
+	.social-media img {
+      width: 60px;
+      height: 60px;
+      margin: 0px 3px 0px 3px;
+    }
+
+
+	.navbar-nav a {
+		color:#f3f5f3;
+		font-size: 1.5em;
+	}
+
+  	.nav-item {
+		background-color: #135450;
+		margin: 5px 5px 5px 5px;
+		font-size: 1.1em;
+	}
+
+	.navbar-toggler-ico {
+		font-size: 2.2em;
+		color: #135450;
+		z-index: 5;
+		opacity: 1;
+
+	}
+
+
+	.navbar-brand img {
+		max-width: 150px;
+	  	max-height: 150px;
+	}
+}
 }
 
 
