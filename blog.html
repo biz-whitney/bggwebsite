@@ -2,7 +2,7 @@
 <html>
 <html lang='en'>
 <head>
-	<title>Youtube</title>
+	<title>Blog</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -11,64 +11,22 @@
 
 <style>
 
-.youtube {
-  margin: 2% 0px 0px 0px;
+.section-one {
+  margin: 20px 4% 0px 4%;
 }
-
-.subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 2em;
-  margin: 0px 0px 2% 0px;
-}
-
-button {
-  background-color: #135450;
-  color: #f3f5f3;
-}
-
-button:hover {
-  opacity: 0.5;
-}
-
-iframe {
-  height: 600;
-  width: 600;
-}
-
 
 @media (max-width: 800px) {
-  .youtube {
-    margin: 100px 0px 0px 0px;
+  .section-one {
+    margin: 110px 20px 0px 20px;
   }
-
-  .subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5em;
-    margin: 0px 0px 2% 0px;
-  }
-
-  .col-lg-4 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px 0px 0px;
-  }
-
 }
-
 
 
 
 </style>
 
 <body>
-	<nav class="navbar navbar-expand-lg">
+	<nav class="navbar navbar-expand-md">
 	  <a class="navbar-brand" href="index.html"> <img src="bgg_logo1.png"></a>
 	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 	    <span class="navbar-toggler-ico">&#9776;</span>
@@ -97,47 +55,21 @@ iframe {
 	  </div>
 	</nav>
 
-  <div class="youtube">
-    <div class="subscribe"> Watch my Youtube Channel:
-      <div class="media-button">
-        <button onclick="window.location.href = 'https://www.youtube.com/channel/UC9-IprVzq3VybJae_lqrXjA?sub_confirmation=1';">Subscribe Here</button>
-      </div>
-    </div>
-  
-
-    <div class="container">
-      <!--Row One-->
-      <div class="row">     
-          <div class="col-lg-4">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/pydAENmayl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-          </div>
-          <div class="col-lg-4">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/3UN6eE_cMCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-
-          <div class="col-lg-4">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/OAI0DVWtw8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-          </div>
-      </div>
-
-      <!-- To start the new row -->
-      <div class="row">     
-          <div class="col-lg-4">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/Fwy-2QRGjSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-          </div>
-      </div>
+	<div class="section-one">
+    <div id="retainable-rss-embed" 
+      data-rss="https://medium.com/feed/vue-mastery"
+      data-maxcols="3" 
+      data-layout="grid" 
+      data-poststyle="inline" 
+      data-readmore="Read the rest" 
+      data-buttonclass="btn btn-primary" 
+      data-offset="-100">
     </div>
 
-
-
-    <hr>
-    <div class="subscribe"> For Even More Brown Girl Green Videos. Check out my livestream series on Crowdcast here.
-      <div class="media-button">
-        <button onclick="window.location.href = 'https://www.crowdcast.io/browngirlgreen';">Watch BGG Livestream </button>
-      </div>     
   </div>
 
-	
+ 
+   
 
 
 	<footer>
@@ -168,6 +100,8 @@ iframe {
         <a href="https://www.linkedin.com/in/kristy-drutman?trk=people-guest_profile-result-card_result-card_full-click"><img src='social_media_icons/Linkedin.png' /></a>
       </div>
     </footer>
+
+  <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

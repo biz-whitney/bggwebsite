@@ -45,6 +45,30 @@
   text-align: center;
 }
 
+.donation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donation h2 {
+  width: 50%;
+  text-align:center;
+}
+
+button {
+  background-color: #135450;
+  color: #f3f5f3;
+  font-size: 2em;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+
+
 
 
 
@@ -82,6 +106,11 @@
     margin-right: none;
     font-size: 1.5em;
     text-align: center;
+  }
+
+  .donation h2 {
+    width: 100%;
+    text-align:center;
   }
 }
 
@@ -136,6 +165,16 @@
       </h2>
     </div>
 	</div>
+
+  <hr>
+
+  <div class="donation">
+    <h2>
+      If you’d like to make a donation to my environmental media work, you can donate to me on Patreon! 
+    </h2>
+    <button onclick="window.location.href = 'https://www.patreon.com/browngirlgreen';">Donate</button>
+    
+  </div>
 
 
 	<footer>
