@@ -100,6 +100,8 @@ footer {
 
 hr {
   border-width: 10px;
+  /*color: #cccccc;*/
+  border-color: #cccccc;
 }
 
 
