@@ -121,6 +121,8 @@ footer {
 	    opacity: 0.8;
 	    text-align: center;
 	    z-index: 10;
+	    overflow: auto;
+      	padding-bottom: 100px;
 	 }
 
 	.navbar-collapse.collapsing {
