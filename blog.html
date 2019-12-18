@@ -16,6 +16,60 @@ body {
 }
 
 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .1s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.col-lg-4:hover .image {
+  opacity: 0.1;
+}
+
+.col-lg-4:hover .middle {
+  opacity: 1;
+}
+
+button {
+  background-color: #135450;
+  color: #f3f5f3;
+  font-size: 2em;
+}
+
+
+
+
+
+hr {
+  border-color: #f3f5f3;
+}
+
+.col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 0px 2% 0px;
+}
+
+.blog-img a:hover {
+  ima
+}
+
 .section-one {
   margin: 20px 0% 0px 0%;
   background-color: #caccca;
@@ -34,7 +88,7 @@ body {
 
 @media (max-width: 800px) {
   .section-one {
-    margin: 110px 0px 0px 0px;
+    margin: 110px 0% 0px 0%;
   }
 }
 
@@ -82,8 +136,78 @@ body {
       data-buttonclass="btn btn-primary"
       data-offset="-100">
     </div>
-
   </div>
+
+  <hr>
+
+  <div class="section-two">
+    <div class="container">
+      <!-- Row One -->
+      <div class="row">
+
+        <!-- column one -->
+        <div class="col-lg-4">
+          <img src="pics/bodyhairarticle.PNG" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <button onclick="window.location.href = 'https://thetab.com/us/2016/05/26/remove-body-hair-8867';">Read More</button>
+          </div>
+        </div>
+
+        <!-- column two -->
+        <div class="col-lg-4">
+          <img src="pics/blacklivesmatterbgg.PNG" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <button onclick="window.location.href = 'https://thetab.com/us/2016/07/21/black-lives-matter-to-me-filipina-35430';">Read More</button>
+          </div>
+        </div>
+
+        <!-- column three -->
+        <div class="col-lg-4">
+          <img src="pics/15generationblog.PNG" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <button onclick="window.location.href = 'http://thetab.com/us/2016/07/11/what-its-like-generation-29952';">Read More</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <!-- column one -->
+        <div class="col-lg-4">
+          <img src="pics/polandozyblog.PNG" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <button onclick="window.location.href = 'https://www.ozy.com/opinion/how-poland-and-the-world-let-down-this-young-activist/91389/';">Read More</button>
+          </div>
+        </div>
+
+        <!-- column two -->
+        <div class="col-lg-4">
+          <img src="pics/2016lesbiansbgg.PNG" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <button onclick="window.location.href = 'https://thetab.com/us/2016/06/08/lesbians-13061';">Read More</button>
+          </div>
+        </div>
+
+
+        <!-- column three -->
+        <div class="col-lg-4">
+          <img src="pics/philippineskayacopiece.PNG" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <button onclick="window.location.href = 'https://medium.com/@kayaco/2-years-ago-i-spent-a-summer-living-and-working-in-the-philippines-d90c2e2c6430';">Read More</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+
 
    
 
