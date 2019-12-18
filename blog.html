@@ -10,11 +10,18 @@
 </head>
 
 <style>
-body {
+/*body {
   background-color: #cccccc;;
 
-}
+}*/
 
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .image {
   opacity: 1;
@@ -50,12 +57,16 @@ button {
   font-size: 2em;
 }
 
+button:hover {
+  opacity: 0.5;
+}
+
 
 
 
 
 hr {
-  border-color: #f3f5f3;
+  /*border-color: #f3f5f3;*/
 }
 
 .col-lg-4 {
@@ -63,7 +74,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0% 0px 2% 0px;
+  margin: 0% 0px 5% 0px;
 }
 
 .blog-img a:hover {
@@ -71,8 +82,7 @@ hr {
 }
 
 .section-one {
-  margin: 20px 0% 0px 0%;
-  background-color: #caccca;
+  margin: 20px 2% 0px 2%;
 }
 
 .btn {
@@ -127,10 +137,11 @@ hr {
 	</nav>
 
 	<div class="section-one">
+    <h1 class="title"> Brown Girl Green Blog</h1>
     <div id="retainable-rss-embed" 
       data-rss="http://medium.com/feed/@kristydrutman"
       data-maxcols="3" 
-      data-layout="slider" 
+      data-layout="grid" 
       data-poststyle="inline" 
       data-readmore="Read More" 
       data-buttonclass="btn btn-primary"
@@ -141,6 +152,7 @@ hr {
   <hr>
 
   <div class="section-two">
+    <h1 class="title"> Other Published Articles</h1>
     <div class="container">
       <!-- Row One -->
       <div class="row">
@@ -199,14 +211,66 @@ hr {
         </div>
       </div>
 
+    </div>
+  </div>
+
+
+  <hr>
+
+  <div class="section-two">
+    <h1 class="title"> Featured Pieces </h1>
+    <div class="container">
+      <!-- Row One -->
+      <div class="row">
+
+        <!-- column one -->
+        <div class="col-lg-4">
+          <img src="pics/filipinoinquirer.PNG" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <button onclick="window.location.href = 'https://newsinfo.inquirer.net/1061445/amid-din-of-climate-change-talk-youths-want-their-cries-heard';">Read More</button>
+          </div>
+        </div>
+
+        <!-- column two -->
+        <div class="col-lg-4">
+          <img src="pics/lostart.PNG" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <button onclick="window.location.href = 'https://www.projectgood.work/blog';">Read More</button>
+          </div>
+        </div>
+        
+
+        <!-- column three -->
+        <div class="col-lg-4">
+          <img src="pics/kristydrutmanorganicvalley.PNG" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <button onclick="window.location.href = 'https://www.organicvalley.coop/blog/activism-101-age-is-just-a-number/';">Read More</button>
+          </div>
+        </div>
+      </div>
 
 
 
+      <div class="row">
+        <!-- column one -->
+        <div class="col-lg-4">
+          <img src="pics/risingupwithsonail.PNG" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+            <button onclick="window.location.href = 'http://www.risingupwithsonali.com/2018/12/10/youth-climate-activists-disrupt-trump-coal-event-in-poland/';">Read More</button>
+          </div>
+        </div>
+        
 
 
+      
+      </div>
 
     </div>
   </div>
+
+
+  <hr>
+
 
 
    
