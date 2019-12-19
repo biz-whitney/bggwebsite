@@ -1,2 +1,2 @@
-the files for [bggwebsite](https://biz-whitney.github.io/bggwebsite/index.html)
+Files for website I developed for the brand BrownGirlGreen. You can view the website at [kristydrutman.com](kristydrutman.com)
 
