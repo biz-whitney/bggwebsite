@@ -103,6 +103,10 @@ hr {
   /*color: #cccccc;*/
   border-color: #cccccc;
 }
+.copyright {
+	text-align: center;
+	padding-bottom: 10px;
+}
 
 
 
