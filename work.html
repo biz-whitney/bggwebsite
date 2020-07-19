@@ -6,21 +6,24 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="main.css">
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <style>
 
+
   .taboption-item a{
-/*    width: 100px;
-    height: 20px;*/
-    font-size: 1em;
-    color: black;
+    width: 12em;
+    padding: 2%; 
+    height: auto;
+    color: #f3f5f3;
+    font-size: 1.5em;
+    background-color: #135450;
+    margin: 10px;
   }
 
 .section-one {
@@ -32,9 +35,8 @@
   padding-bottom: 5%;
 }
 
-.section-five p,
-.section-four h1,
-.section-three h1 {
+.section-two h1,
+.section-two p {
   text-align: center;
 }
 
@@ -42,14 +44,13 @@
   font-style: italic;
   font-size: 2em;
   width: 80%;
+  text-align: center;
 }
 
 
 
 .section-six,
 .section-five,
-.section-four,
-.section-three,
 .section-two {
   display: flex;
   flex-direction: column;
@@ -65,6 +66,7 @@
   list-style-position: inside;
 }
 
+.section-two p,
 .speaking-ul {
   font-size: 1.5em;
 }
@@ -114,6 +116,11 @@ button:hover {
   height:360px;
   object-fit: cover;
 }
+
+.tab-row {
+    width: 100px;
+    margin: 0 auto;
+  }
 }
 
 </style>
@@ -139,16 +146,15 @@ button:hover {
           <a class="nav-link" href='https://browngirlgreen.org/blog/'>Blog</a>
         </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href='speaking.html'>Speaking</a>
+	        <a class="nav-link" href='work.html'>Work</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href='contact.html'>Contact</a>
+	        <a class="nav-link" href='https://www.patreon.com/browngirlgreen' target="_blank">Support</a>
 	      </li>
 	    </ul>
 	  </div>
-	</nav>
-
-
+  </nav>
+  
   <div class="section-one">
     <h1 style="font-size: 4em">Work With Me</h1>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -185,26 +191,34 @@ button:hover {
 
   <hr>
 
-  <div class="container">
-    <h2>What I Offer</h2>
-    <br>
-    <!-- Nav pills -->
-    <ul class="nav nav-pills" role="tablist">
-      <li class="nav-item taboption-item">
-        <a class="nav-link active" data-toggle="pill" href="#home">Speaking</a>
-      </li>
-      <li class="nav-item taboption-item">
-        <a class="nav-link" data-toggle="pill" href="#menu1">Content Collaboration</a>
-      </li>
-      <li class="nav-item taboption-item">
-        <a class="nav-link" data-toggle="pill" href="#menu2">Consulting</a>
-      </li>
-    </ul>
+
+  <div>
+    <div class="section-two">
+      <h1>WHAT I OFFER</h1>
+      <!-- <br> -->
+      <!-- Nav pills -->
+      <div class="row justify-content-around tab-row">
+        <ul class="nav nav-pills" role="tablist">
+          <!-- <li class="nav-item taboption-item"> -->
+          <li class="taboption-item">
+            <a class="nav-link active text-center" data-toggle="pill" href="#home">Speaking</a>
+          </li>
+          <li class="taboption-item">
+            <a class="nav-link text-center" data-toggle="pill" href="#menu1">Content Collaboration</a>
+          </li>
+          <li class="taboption-item">
+            <a class="nav-link text-center" data-toggle="pill" href="#menu2">Consulting</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
 
     <!-- Tab panes -->
     <div class="tab-content">
-      <div id="home" class="container tab-pane active"><br>
-        <h3>Speaking</h3>
+      <div id="home" class="tab-pane active"><br>
+        <!-- <h3>Speaking</h3> -->
         <div class="section-two">
           <div class="topic">
             <h1>
@@ -222,7 +236,7 @@ button:hover {
 
         <hr>
 
-        <div class="section-three">
+        <div class="section-two">
           <div class="workshops">
             <h1>
               WORKSHOPS I’VE HOSTED:
@@ -237,7 +251,7 @@ button:hover {
 
         <hr>
 
-        <div class="section-four">
+        <div class="section-two">
           <div class="speaking">
             <h1>
               PAST SPEAKING ENGAGEMENTS:
@@ -272,17 +286,16 @@ button:hover {
           <h1>Want me to speak at your campus or upcoming event?
           </h1>
           <button onclick="window.location.href = 'mailto:browngirlgreenshow@gmail.com';">Contact Me!</button>
-
         </div>
       </div>
 
 
-      <div id="menu1" class="container tab-pane fade"><br>  
-        <h3>Content Collaboration</h3>
+      <div id="menu1" class="tab-pane fade"><br>  
+        <!-- <h3>Content Collaboration</h3> -->
         <div class="section-two">
           <div class="topic">
             <h1>
-              Who I work with
+              WHO I WORK WITH
             </h1>
             <ul class="speaking-ul">
               <li>Brands and institutions who demonstrate that both sustainability as 
@@ -293,36 +306,37 @@ button:hover {
               <li>Schools, organizations, and thought leaders who want innovate 
                 ideas around climate solutions accessible and understandable to broader 
                 audiences</li>
-       
             </ul> 
           </div> 
         </div>
 
         <hr>
 
-        <div class="section-three">
+        <div class="section-two">
           <div class="workshops">
             <h1>
-              Value Statement
+              VALUE STATEMENT
             </h1>
-            <h3>
-              As an <a href="https://www.intersectionalenvironmentalist.com/the-council">Intersectional Environmentalist</a>, 
-              I am excited to collaborate with brands and institutions who not only promote 
-              sustainability, but also address diversity, equity, and inclusion 
-              within their work. This includes, but is not limited to: the labor 
-              behind products, diversity of leadership/ decision-making within 
-              the brand, and the alignment of the brand’s values with Brown 
-              Girl Green.
-            </h3>   
+            <div class="container">
+              <p>
+                As an <a href="https://www.intersectionalenvironmentalist.com/the-council">Intersectional Environmentalist</a>, 
+                I am excited to collaborate with brands and institutions who not only promote 
+                sustainability, but also address diversity, equity, and inclusion 
+                within their work. This includes, but is not limited to: the labor 
+                behind products, diversity of leadership/ decision-making within 
+                the brand, and the alignment of the brand’s values with Brown 
+                Girl Green.
+              </p> 
+            </div>  
           </div>  
         </div>
 
         <hr>
 
-        <div class="section-four">
+        <div class="section-two">
           <div class="speaking">
             <h1>
-              Some of the content I create with brands are:
+              SOME OF THE CONTENT I CREATE WITH BRANDS ARE:
             </h1>
             <ul class="speaking-ul">
               <li>IG LIVE recordings, IG static posts, and IG stories</li>
@@ -332,44 +346,60 @@ button:hover {
             </ul>     
           </div>  
         </div>
+
+        <hr>
+        <div class="section-six">
+          <h1>Want to collaborate with me?
+          </h1>
+          <button onclick="window.location.href = 'mailto:browngirlgreenshow@gmail.com';">Contact Me!</button>
+        </div>
       </div>
-      <div id="menu2" class="container tab-pane fade"><br>
-        <h3>Consulting</h3>
+
+
+
+
+      <div id="menu2" class="tab-pane fade"><br>
         <div class="section-two">
           <div class="topic">
             <h1>
-              Diversity, Equity, and Inclusion in the environmental field 
+              DIVERSITY, EQUITY, AND INCLUSION IN THE ENVIRONMENTAL FIELD
             </h1>
-            <h3>
-              I offer Diversity, Equity, and Inclusion training for schools, 
-              environmental companies,  organizations, and individuals. 
-              Please contact browngirlgreenshow@gmail.com, with subject 
-              line reading “DIVERSITY & INCLUSION INQUIRY” 
-            </h3> 
+            <div class="container">
+              <p>
+                I offer Diversity, Equity, and Inclusion training for schools, 
+                environmental companies,  organizations, and individuals. 
+                Please contact browngirlgreenshow@gmail.com, with subject 
+                line reading “DIVERSITY & INCLUSION INQUIRY” 
+              </p> 
+            </div>
           </div> 
         </div>
 
         <hr>
 
-        <div class="section-three">
+        <div class="section-two">
           <div class="workshops">
             <h1>
-              Personal Branding & Digital Media 
+              PERSONAL BRANDING & DIGITAL MEDIA
             </h1>
-            <p>
-              I offer consulting for individuals, organizations, companies etc.
-               who have a story they want to tell about their passion and just 
-               can’t find their right voice. I work with clients to develop 
-               strategic messaging, branding, and content creation for their
-                target audience. 
-            </p>
-            <p>
-              I also train/ consult environmental companies and organizations 
-              who want to improve or enhance their messaging or digital 
-              organizing tactics to effectively market their content. Please 
-              contact browngirlgreenshow@gmail.com, with subject line reading 
-              “DIGITAL MEDIA CONSULTING”
-            </p>     
+            <div class="container">
+              <p>
+                I offer consulting for individuals, organizations, companies etc.
+                 who have a story they want to tell about their passion and just 
+                 can’t find their right voice. I work with clients to develop 
+                 strategic messaging, branding, and content creation for their
+                  target audience. 
+              </p>
+              <p>
+                I also train/consult environmental companies and organizations 
+                who want to improve or enhance their messaging or digital 
+                organizing tactics to effectively market their content. Please 
+                contact <a href="mailto:browngirlgreenshow@gmail.com"> 
+                  browngirlgreenshow@gmail.com
+                </a>, with subject line reading 
+                “DIGITAL MEDIA CONSULTING”
+              </p>  
+            </div>    
           </div>  
         </div>
         <hr>
@@ -380,10 +410,22 @@ button:hover {
           </p>
         </div>
 
+        <hr>
+
+        <div class="section-six">
+          <h1>Want me to train you?
+          </h1>
+          <button onclick="window.location.href = 'mailto:browngirlgreenshow@gmail.com';">Contact Me!</button>
+        </div>
 
       </div>
     </div>
   </div>
+
+
+  
+
+  
 
 
 
@@ -429,9 +471,6 @@ button:hover {
 
 
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"867b3feac109de07f86e678fd","lid":"9d29757190","uniqueMethods":true}) })</script>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
  </body>

@@ -31,7 +31,7 @@ body {
 	font-size: 3em;	
 }
 
- .nav-item a:hover {
+.nav-item a:hover {
  	cursor: pointer;
  }
 
@@ -168,7 +168,7 @@ hr {
 		font-size: 1.5em;
 	}
 
-  	.nav-item {
+	.nav-item {
 		background-color: #135450;
 		margin: 5px 5px 5px 5px;
 		font-size: 1.1em;
@@ -188,7 +188,7 @@ hr {
 	  	max-height: 150px;
 	}
 }
-}
+
 
 
 
