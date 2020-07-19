@@ -37,6 +37,10 @@ iframe {
   width: 600;
 }
 
+.col-md-4 {
+  margin: 2% 0% 2% 0%;
+}
+
 
 @media (max-width: 800px) {
   .youtube {
@@ -103,71 +107,89 @@ iframe {
         <button onclick="window.open('https://www.youtube.com/channel/UC9-IprVzq3VybJae_lqrXjA?sub_confirmation=1')">Subscribe Here</button>
       </div>
     </div>
-  
-
-    <div class="container">
-      <!--Row 1-->
-      <div class="row">
-        <div class="col-lg-4">
-          <iframe width="auto" height="auto" src="https://www.youtube.com/embed/W1dcnECEt4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="col-lg-4">
-          <iframe width="auto" height="auto" src="https://www.youtube.com/embed/SQ1f_2jq0ZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="col-lg-4">
-           <iframe width="auto" height="auto" src="https://www.youtube.com/embed/uu9IbaePfp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-
-
-      <!--Row 2-->
-      <div class="row">
-        <div class="col-lg-4">
-          <iframe width="auto" height="auto" src="https://www.youtube.com/embed/IjrrlEtLQx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="col-lg-4">
-         <iframe width="auto" height="auto" src="https://www.youtube.com/embed/y6QkTngH-QY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="col-lg-4">
-         <iframe width="auto" height="auto" src="https://www.youtube.com/embed/jgW0Jn_ZREU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-        </div>     
-      </div>
-
-      <!-- Row 3-->
-      <div class="row">   
-          <div class="col-lg-4">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/pydAENmayl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-          </div>
-          <div class="col-lg-4">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/3UN6eE_cMCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="col-lg-4">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/OAI0DVWtw8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-          </div>
-      </div>
-
-      <!-- Row 4 -->
-       <div class="row">
-          <div class="col-lg-4">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/Fwy-2QRGjSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-          </div>
-      </div>
-
-
-
-    </div> <!--this div is used to close the container for the grid -->
-
-
-
 
     <hr>
-    <div class="subscribe"> For Even More Brown Girl Green Videos. Check out my livestream series on Crowdcast here.
-      <div class="media-button">
-        <button onclick="window.open('https://www.crowdcast.io/browngirlgreen', '_blank')">Watch BGG LiveStream</button>
-      </div>     
+
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W1dcnECEt4Y" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SQ1f_2jq0ZY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uu9IbaePfp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IjrrlEtLQx8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y6QkTngH-QY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jgW0Jn_ZREU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pydAENmayl4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3UN6eE_cMCE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OAI0DVWtw8I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Fwy-2QRGjSA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-	
+
+  <hr>
+  <div class="subscribe"> For Even More Brown Girl Green Videos. Check out my livestream series on Crowdcast here.
+    <div class="media-button">
+      <button onclick="window.open('https://www.crowdcast.io/browngirlgreen', '_blank')">Watch BGG LiveStream</button>
+    </div>     
+  </div>	
+
+
+
 
 
 	<footer>
