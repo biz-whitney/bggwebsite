@@ -10,87 +10,15 @@
 </head>
 
 <style>
-
-
-.about {
-  display: flex;
-  justify-content: center;
-  margin: 20px 10% 0px 10%;
-}
-
-#headshot{
-  width: 45%;
-  height: 50%;
-  object-fit: cover;
-}
-
-
-.about-text {
-  margin-right: 5%;
-}
-
-.about-text h1 {
-  margin-bottom: 5%;
-  font-size: 4em;
-
-}
-
-.about-text h2 {
-  margin-bottom: 5%;
-  font-size: 2em;
-  text-align: center;
-}
-
-.about-text p {
-  margin-bottom: 5%;
-  font-size: 1.5em;
-}
-
-
-
-
-@media (max-width: 800px) {
-
-  .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 100px 0px 0px 0px;
-    width: 100%;
+  .about-container {
+    padding: 2% 0% 0% 0%;
   }
 
-  #headshot{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  @media (max-width: 800px) {
+    .about-container {
+      margin: 100px 0px 0px 0px;
+    }
   }
-
-  .about-text {
-    display: flex;
-    flex-direction: column;
-
-    width: 95%;
-    margin-right: 2%;
-    margin-left: 2%;
-  }
-
-  .about-text h1 {
-    margin-right: none;
-    font-size: 3em;
-  }
-
-  .about-text h2 {
-    margin-right: none;
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-  .about-text p {
-    margin-right: none;
-    font-size: 1em;
-    text-align: justify;
-  }
-}
 
 </style>
 
@@ -112,7 +40,7 @@
 	        <a class="nav-link" href='youtube.html'>Youtube</a>
 	      </li>
         <li class="nav-item">
-          <a class="nav-link" href='blog.html'>Blog</a>
+          <a class="nav-link" href='https://browngirlgreen.org/blog/'>Blog</a>
         </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href='speaking.html'>Speaking</a>
@@ -122,57 +50,67 @@
 	      </li>
 	    </ul>
 	  </div>
-	</nav>
-
-	
-   <div class="about">
-      <div class="about-text"> 
+  </nav>
+  
+  <div class="container about-container">
+    <div class="row align-items-center">
+      <div class="col-lg">
         <h1>
           About
         </h1>
         <h2>
           Kristy Drutman otherwise known as, “Brown Girl Green” is a <em>Jew-Pina</em> American environmental media host, speaker, activist, and digital media strategist. 
         </h2>
-        <p>
-           Kristy is passionate about working at the intersections between media, diversity, and environmentalism. As a youth climate activist, Kristy has spoken in front of thousands as well as facilitated workshops centered around environmental media and storytelling in cities across the United States. She has also worked with youth from around the world to create collaborative, intersectional online media with the goal of creating conscious, culturally relevant content to engage audiences about proactive solution-building to the climate crisis.
-        </p>
+        <h4>
+          Kristy is passionate about working at the intersections between media, 
+          diversity, and environmentalism. As a youth climate activist, Kristy 
+          has spoken in front of thousands as well as facilitated workshops 
+          centered around environmental media and storytelling in cities across 
+          the United States. She has also worked with youth from around the world 
+          to create collaborative, intersectional online media with the goal of 
+          creating conscious, culturally relevant content to engage audiences 
+          about proactive solution-building to the climate crisis.
+       </p>
       </div>
-      <img id='headshot' src='pics/IMG_5181.jpg' alt= 'Head shot'>
-	</div>
+      <div class="col-lg">
+        <img class="img-fluid" src='pics/IMG_5181.jpg' alt='Head shot' id='headshot'>
+      </div>
+    </div>
+  </div>
 
 
 	<footer>
-      <div class="newsletter">
-  
-        <!-- Begin Mailchimp Signup Form -->
-        <style type="text/css">
-  
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
-        <div id="mc_embed_signup">
-        <form action="https://kristydrutman.us18.list-manage.com/subscribe/post?u=867b3feac109de07f86e678fd&amp;id=9d29757190" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-        <label for="mce-EMAIL">Join the Brown Girl Green Newsletter</label>
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_867b3feac109de07f86e678fd_9d29757190" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
-        </form>
-        </div>
+    <div class="newsletter">
+
+      <!-- Begin Mailchimp Signup Form -->
+      <style type="text/css">
+
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+      <form action="https://kristydrutman.us18.list-manage.com/subscribe/post?u=867b3feac109de07f86e678fd&amp;id=9d29757190" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL">Join the Brown Girl Green Newsletter</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_867b3feac109de07f86e678fd_9d29757190" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+      </form>
       </div>
-      <div class="social-media">
-        <a target="_blank" href="https://www.instagram.com/browngirl_green/"><img src='social_media_icons/Instagram.png' /></a>
-        <a target="_blank" href="https://twitter.com/browngirl_green"><img src='social_media_icons/Twitter.png' /></a>
-        <a target="_blank" href="https://m.youtube.com/channel/UC9-IprVzq3VybJae_lqrXjA"><img src='social_media_icons/YouTube.png' /></a>
-        <a target="_blank" href="https://www.linkedin.com/in/kristy-drutman?trk=people-guest_profile-result-card_result-card_full-click"><img src='social_media_icons/Linkedin.png' /></a>
-      </div>
-      <div class="copyright">
-        &copy; All Content Copyright 2020<br />
-        All trademarks are the property of BrownGirlGreen&trade;
-      </div>
-    </footer>
+    </div>
+    <div class="social-media">
+      <a target="_blank" href="https://www.instagram.com/browngirl_green/"><img src='social_media_icons/Instagram.png' /></a>
+      <a target="_blank" href="https://twitter.com/browngirl_green"><img src='social_media_icons/Twitter.png' /></a>
+      <a target="_blank" href="https://m.youtube.com/channel/UC9-IprVzq3VybJae_lqrXjA"><img src='social_media_icons/YouTube.png' /></a>
+      <a target="_blank" href="https://www.linkedin.com/in/kristy-drutman?trk=people-guest_profile-result-card_result-card_full-click"><img src='social_media_icons/Linkedin.png' /></a>
+    </div>
+    <div class="copyright">
+      &copy; All Content Copyright 2020<br />
+      All trademarks are the property of BrownGirlGreen&trade;
+    </div>
+  </footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

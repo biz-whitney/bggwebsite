@@ -10,88 +10,34 @@
 </head>
 
 <style>
-body {
-  margin: 0;
 
-}
-
-.podcast {
-  margin: 2% 0px 0px 0px;
-}
-
-.media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.media-text {
-  font-size: 2em;
-}
-
-.btn-container {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  justify-content: space-between;
+.media-button-cnt {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 button {
   background-color: #135450;
   color: #f3f5f3;
-}
-
-.media-button {
   font-size: 2em;
   margin: 2% 0px 2% 0px;
-}
-
-
-.text-indent {
-  margin: 0px 10% 0px 10%;
-  font-size: 2em;
 }
 
 button:hover {
   opacity: 0.5;
 }
 
+
 @media (max-width: 800px) {
-  .text-indent {
-    margin: 0px 1% 0px 1%;
-  }
-
-  .btn-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.media-button {
-  font-size: 2em;
-  margin: 2% 0px 2% 0px;
-}
-
   .podcast {
-    margin: 110px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
   }
-
-  .col-lg-4 {
-    margin: 0px 0px 60px 0px;
-  }
-
 }
-}
-
-
-
 
 </style>
 
 <body>
-	<nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-md">
 	  <a class="navbar-brand" href="index.html"> <img src="bgg_logo1.png"></a>
 	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 	    <span class="navbar-toggler-ico">&#9776;</span>
@@ -108,7 +54,7 @@ button:hover {
 	        <a class="nav-link" href='youtube.html'>Youtube</a>
 	      </li>
         <li class="nav-item">
-          <a class="nav-link" href='blog.html'>Blog</a>
+          <a class="nav-link" href='https://browngirlgreen.org/blog/'>Blog</a>
         </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href='speaking.html'>Speaking</a>
@@ -118,126 +64,139 @@ button:hover {
 	      </li>
 	    </ul>
 	  </div>
-	</nav>
+  </nav>
 
   <div class="podcast">
-    <div class="media">
-      <div class="text-indent">
-        Listen to Brown Girl Green wherever you get your podcasts & hit that subscribe button to help save the planet one podcast at a time:
+    <div class="container media-button-cnt">
+      <div class="row">
+        <h2>Listen to Brown Girl Green wherever you get your podcasts & hit that
+           subscribe button to help save the planet one podcast at a time:</h2>
       </div>
-      <div class="btn-container">
-
-        <div class="media-button">
+      <div class="row justify-content-around">
+        <div clas="col-md center-block">
           <button onclick="window.open('https://podcasts.apple.com/us/podcast/brown-girl-green/id1438363074', '_blank')">I-Tunes</button>
         </div>
-        <div class="media-button">
+        <div clas="col-md center-block">
           <button onclick="window.open('https://open.spotify.com/show/4NreqTdjZvOgxvaNN2njEN', '_blank')">Spotify</button>
         </div>
-        <div class="media-button">
+        <div clas="col-md center-block">
           <button onclick="window.open('https://soundcloud.com/browngirlgreen', '_blank')">SoundCloud</button>
         </div>
-
-        <!-- <div class="btn-media"> <h1>I-Tunes </h1></div>
-        <div class="btn-media">Spotify</div>
-        <div class="btn-media">SoundClound</div> -->
-      
       </div>
-    </div>
+    </div> 
 
     <hr>
   
     <div class="container">
-      <!-- Row One -->
+
+      <!-- Row 2 -->
+
       <div class="row">
-
-          <div class="col-lg-4">
-            <div class="podcast-img"> 
-              <img src="pics/podcast_3.png" style="width:100%">
-            </div>
-            <h3>Self-Care In The Time of Climate Crisis</h3>
-            <p>It is expected that the climate crisis has and will continue to have a detrimental impact on public health, particularly on society’s mental health. As the news likes to convince us that the world is falling apart (and in some ways it is), how are we going to take care of ourselves and each other? Listen to this episode with Brittney Enin, the Self Care Consultant.</p>
-            <iframe src="https://pinecast.com/player/e2370788-876d-4eef-aa60-db7b885ab95a?theme=minimal" seamless height="60" style="border:0" class="pinecast-embed" frameborder="0" width="100%">
-            </iframe>
+        <div class="col-lg">
+          <div class="podcast-img"> 
+            <img src="pics/podcast_6.jpg"style="width:100%">
           </div>
+          <h3>Talking Circular Economy: Making Synthetic Hair More Sustainable</h3>
+          <p> We are joined with Ciara Imani May, founder of Rebundle, a company closing the loop on synthetic hair waste one bundle at a time. We will be talking about what it means to generate a circular economy, how to make an environmentally friendly and culturally conscious product, and how to support young entrepreneurs of color working to save the world.
+          </p> <iframe src="https://pinecast.com/player/ad072c85-6c5e-4498-a403-85df900b81c8?theme=minimal" seamless height="60" style="border:0" class="pinecast-embed" frameborder="0" width="100%"></iframe>
+        </div>
 
 
-          <div class="col-lg-4">
-            <div class="podcast-img"> 
-              <img src="pics/podcast_2.png" style="width:100%">
-            </div>
-            <h3>Save The Planet, Save Your Money</h3>
-            <p>In our current climate crisis, how can we reach the masses through storytelling, connection, and education? In this episode of Brown Girl Green, I meet with Environmental “Eco-Influencer” Go Green Save Green, Ariel Maldonado. Ariel uses Instagram to engage her audience about how to live sustainably and to save money along the way.</p>
-            <iframe src="https://pinecast.com/player/adecd9f3-eea6-499d-a7c9-923a76c39a35?theme=minimal" seamless height="60" style="border:0" class="pinecast-embed" frameborder="0" width="100%">
-            </iframe>
+        <div class="col-lg">
+          <div class="podcast-img"> 
+            <img src="pics/podcast_5.jpg" style="width:100%">
           </div>
+          <h3>Put Your Money Where Your Values Are: Personal Finance & The Planet</h3>
+          <p>Given this fiscally-uncertain world for the 99%, how can we put our money where our values are?  This segment will feature an interview with Joelle Sostheim to learn how to use personal finance as a tool to make alternative, environmentally-conscious spending, and investments. As well as Lila Holzman, from As You Sow, tells us how we can place our accrued wealth into environmentally-friendly funding sources in order to invest in companies that are doing good, rather than bad, things to the planet.
+          </p> <iframe src="https://pinecast.com/player/c5ed172b-1acb-451b-b860-a7762a53e074?theme=minimal" seamless height="60" style="border:0" class="pinecast-embed" frameborder="0" width="100%"></iframe>
+        </div>
 
-          
-          <div class="col-lg-4">
-            <div class="podcast-img"> 
-              <img src="pics/podcast_1.png" style="width:100%">
-            </div>
-            <h3>Pilot Episode</h3>
-            <p>In the pilot episode of Brown Girl Green, Kristy, a Filipina American environmental activist discusses the origins of Brown Girl Green. From activist burnout to trying to find diplomacy (or love?) on tinder, this episode lays the groundwork of what you can expect to watch in Season 1.</p>
-            <iframe src="https://pinecast.com/player/bf72a89c-1653-41de-a4a3-743039cae263?theme=minimal" seamless height="60" style="border:0" class="pinecast-embed" frameborder="0" width="100%">
-            </iframe>
+        <div class="col-lg">
+          <div class="podcast-img"> 
+            <img src="pics/podcast_4.png" style="width:100%">
           </div>
+          <h3>Climate Change & Disabilities: How'd we get here?</h3>
+          <p>Kristy interviews Marsha Saxton and Alex Ghenis from the World Institute on Disabilities (WID) about climate change & disabilities. Given the global pandemic, Kristy takes the intersection of disability justice and climate change to find its connection to coronavirus.  Without the infrastructure necessary to support people with disabilities, communities remain disappointingly unfit to support this group. Marsha and Alex, nonetheless, share their optimism and practical solutions in hopes to build a more inclusive, adaptable climate-changing-world.</p>
+          <iframe src="https://pinecast.com/player/7ab7f398-0337-4cc6-9309-58197eb92610?theme=minimal" seamless height="60" style="border:0" class="pinecast-embed" frameborder="0" width="100%">
+          </iframe>
+        </div>
+      
       </div>
 
-    <!-- To start the new row -->
-    <!-- <div class="row">
-      <div class="col-lg-4">
-        <div class="podcast-img"> 
-          <img src="pics/podcast_1.png" style="width:100%">
+      <!-- Row 1 -->
+      <div class="row">
+        
+        <div class="col-lg">
+          <div class="podcast-img"> 
+              <img src="pics/podcast_3.png" style="width:100%">
+          </div>
+          <h3>Self-Care In The Time of Climate Crisis</h3>
+          <p>It is expected that the climate crisis has and will continue to have a detrimental impact on public health, particularly on society’s mental health. As the news likes to convince us that the world is falling apart (and in some ways it is), how are we going to take care of ourselves and each other? Listen to this episode with Brittney Enin, the Self Care Consultant.</p>
+          <iframe src="https://pinecast.com/player/e2370788-876d-4eef-aa60-db7b885ab95a?theme=minimal" seamless height="60" style="border:0" class="pinecast-embed" frameborder="0" width="100%">
+          </iframe>
         </div>
-        <h3>Pilot Episode</h3>
-        <iframe src="https://pinecast.com/player/bf72a89c-1653-41de-a4a3-743039cae263?theme=minimal" seamless height="60" style="border:0" class="pinecast-embed" frameborder="0" width="100%">
-        </iframe>
-      </div>    
-    </div> -->
+
+        <div class="col-lg">
+          <div class="podcast-img"> 
+              <img src="pics/podcast_2.png" style="width:100%">
+          </div>
+          <h3>Save The Planet, Save Your Money</h3>
+          <p>In our current climate crisis, how can we reach the masses through storytelling, connection, and education? In this episode of Brown Girl Green, I meet with Environmental “Eco-Influencer” Go Green Save Green, Ariel Maldonado. Ariel uses Instagram to engage her audience about how to live sustainably and to save money along the way.</p>
+          <iframe src="https://pinecast.com/player/adecd9f3-eea6-499d-a7c9-923a76c39a35?theme=minimal" seamless height="60" style="border:0" class="pinecast-embed" frameborder="0" width="100%">
+          </iframe>
+        </div>
+
+        <div class="col-lg">
+          <div class="podcast-img"> 
+            <img src="pics/podcast_1.png" style="width:100%">
+          </div>
+          <h3>Pilot Episode</h3>
+          <p>In the pilot episode of Brown Girl Green, Kristy, a Filipina American environmental activist discusses the origins of Brown Girl Green. From activist burnout to trying to find diplomacy (or love?) on tinder, this episode lays the groundwork of what you can expect to watch in Season 1.</p>
+          <iframe src="https://pinecast.com/player/bf72a89c-1653-41de-a4a3-743039cae263?theme=minimal" seamless height="60" style="border:0" class="pinecast-embed" frameborder="0" width="100%">
+          </iframe>
+        </div>    
+      </div>
 
 
       
     </div> 
   </div>
 
-	
-
-
 	<footer>
-      <div class="newsletter">
-  
-        <!-- Begin Mailchimp Signup Form -->
-        <style type="text/css">
-  
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
-        <div id="mc_embed_signup">
-        <form action="https://kristydrutman.us18.list-manage.com/subscribe/post?u=867b3feac109de07f86e678fd&amp;id=9d29757190" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-        <label for="mce-EMAIL">Join the Brown Girl Green Newsletter</label>
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_867b3feac109de07f86e678fd_9d29757190" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
-        </form>
-        </div>
+    <div class="newsletter">
+
+      <!-- Begin Mailchimp Signup Form -->
+      <style type="text/css">
+
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+      <form action="https://kristydrutman.us18.list-manage.com/subscribe/post?u=867b3feac109de07f86e678fd&amp;id=9d29757190" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+      <label for="mce-EMAIL">Join the Brown Girl Green Newsletter</label>
+      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_867b3feac109de07f86e678fd_9d29757190" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+      </form>
       </div>
-      <div class="social-media">
-        <a target="_blank" href="https://www.instagram.com/browngirl_green/"><img src='social_media_icons/Instagram.png' /></a>
-        <a target="_blank" href="https://twitter.com/browngirl_green"><img src='social_media_icons/Twitter.png' /></a>
-        <a target="_blank" href="https://m.youtube.com/channel/UC9-IprVzq3VybJae_lqrXjA"><img src='social_media_icons/YouTube.png' /></a>
-        <a  target="_blank" href="https://www.linkedin.com/in/kristy-drutman?trk=people-guest_profile-result-card_result-card_full-click"><img src='social_media_icons/Linkedin.png' /></a>
-      </div>
-      <div class="copyright">
-        &copy; All Content Copyright 2020<br />
-        All trademarks are the property of BrownGirlGreen&trade;
-      </div>
-    </footer>
+    </div>
+    <div class="social-media">
+      <a target="_blank" href="https://www.instagram.com/browngirl_green/"><img src='social_media_icons/Instagram.png' /></a>
+      <a target="_blank" href="https://twitter.com/browngirl_green"><img src='social_media_icons/Twitter.png' /></a>
+      <a target="_blank" href="https://m.youtube.com/channel/UC9-IprVzq3VybJae_lqrXjA"><img src='social_media_icons/YouTube.png' /></a>
+      <a target="_blank" href="https://www.linkedin.com/in/kristy-drutman?trk=people-guest_profile-result-card_result-card_full-click"><img src='social_media_icons/Linkedin.png' /></a>
+    </div>
+    <div class="copyright">
+      &copy; All Content Copyright 2020<br />
+      All trademarks are the property of BrownGirlGreen&trade;
+    </div>
+  </footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-	</body>
+</body>
 </html>
